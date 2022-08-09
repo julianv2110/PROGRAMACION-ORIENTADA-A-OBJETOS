@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author JULIAN VALENCIA
+ */
+public class EjercicioLista {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Scanner objetoEntrada = new Scanner(System.in);
+        
+        int lista[] = new int[5];
+        
+        System.out.println("Ingrese 5 números: ");
+        for (int i=0;i<lista.length;i++){
+            lista[i]=objetoEntrada.nextInt();
+        }
+        
+        System.out.println("Su lista quedo así: ");
+        
+        for (int elemento:lista){
+            System.out.println(+elemento);
+        }
+        
+        
+        
+    }
+    
+}
